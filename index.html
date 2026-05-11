@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>GitHub test--</title>
+    <style>
+        /* Глубокий космический черный фон */
+        body {
+            background-color: #05070A;
+            color: #FFFFFF;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        /* Наша встроенная аватарка-радар */
+        .avatar-neon-box {
+            width: 140px;
+            height: 140px;
+            background-color: #0A0F14;
+            border: 2px solid #00FF66; /* Неоново-зеленая рамка OBJ */
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 35px;
+            box-shadow: 0 0 25px rgba(0, 255, 102, 0.4); /* Мощное свечение */
+            position: relative;
+        }
+
+        /* Внутренний тактический круг */
+        .avatar-radar-circle {
+            width: 100px;
+            height: 100px;
+            border: 2px dashed #0088FF; /* Синий пунктирный круг Трио */
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: spin-radar 10s linear infinite; /* Медленное вращение радара */
+        }
+
+        /* Текст по центру авы */
+        .avatar-core-text {
+            font-size: 26px;
+            font-weight: bold;
+            color: #FFFFFF;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px #FFFFFF;
+        }
+
+        /* Вращение радарного кольца */
+        @keyframes spin-radar {
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Стиль надписи и постоянный эффект глитча */
+        .glitch-text {
+            font-size: 64px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            position: relative;
+            text-transform: uppercase;
+            animation: glitch 2.5s infinite;
+        }
+
+        @keyframes glitch {
+            0% { transform: translate(0); text-shadow: none; }
+            15% { transform: translate(-2px, 1px); text-shadow: 2px -1px #FF0033, -2px 1px #00FF66; }
+            17% { transform: translate(1px, -2px); text-shadow: -1px 2px #0088FF, 2px -2px #FF0033; }
+            19% { transform: translate(0); text-shadow: none; }
+            65% { transform: translate(2px, -1px); text-shadow: -2px 2px #00FF66, 1px -1px #0088FF; }
+            67% { transform: translate(-1px, 2px); text-shadow: none; }
+            100% { transform: translate(0); text-shadow: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Встроенная аватарка, которая заспавнится без картинок -->
+    <div class="avatar-neon-box">
+        <div class="avatar-radar-circle">
+            <span class="avatar-core-text">NJS</span>
+        </div>
+    </div>
+
+    <!-- Наш главный чистый заголовок -->
+    <div class="glitch-text">Test Github</div>
+
+</body>
+</html>
